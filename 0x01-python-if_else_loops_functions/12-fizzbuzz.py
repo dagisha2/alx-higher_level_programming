@@ -1,4 +1,4 @@
-#!/bin/usr/env python3
+#!/bin/usr/python3
 number = 0
 for number in range(1, 101):
     if number % 15 == 0:
