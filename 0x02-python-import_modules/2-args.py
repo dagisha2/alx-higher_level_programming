@@ -17,4 +17,4 @@ if __name__ == "__main__":
         print("{} argument:".format(1))
         for argv in sys.argv:
             if argv[0:2] != "./":
-                print("{} {}".format(1, argv))
+                print("{}: {}".format(1, argv))
