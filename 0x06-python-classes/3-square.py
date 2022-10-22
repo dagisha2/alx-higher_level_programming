@@ -16,6 +16,8 @@ class Square:
             raise Exception("size must be >= 0")
         except TypeError as te:
             raise Exception("size must be an integer")
+
     def area(self):
-        """This method returns area of Square""" 
+
+        """This method returns area of Square"""
         return self.__size * self.__size
