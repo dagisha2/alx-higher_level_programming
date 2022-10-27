@@ -18,17 +18,12 @@ class Rectangle:
     @height.setter
     def height(self, value):
         """height setter"""
-        try:
-            if not isinstance(value, int):
-                raise TypeError
-            elif int(value) < 0:
-                raise ValueError
-            else:
-                self.__height = value
-        except TypeError as te:
-            raise Exception("height must be an integer")
-        except ValueError as ve:
-            raise Exception("height must be >= 0")
+        if not isinstance(value, int):
+            raise TypeError("height must be an integer")
+        elif int(value) < 0:
+            raise ValueError("height must be >= 0")
+        else:
+            self.__height = value
 
     @property
     def width(self):
@@ -38,14 +33,9 @@ class Rectangle:
     @width.setter
     def width(self, value):
         """width setter"""
-        try:
-            if not isinstance(value, int):
-                raise TypeError
-            elif int(value) < 0:
-                raise ValueError
-            else:
-                self.__width = value
-        except TypeError as te:
-            raise Exception("width must be an integer")
-        except ValueError as ve:
-            raise Exception("width must be >= 0")
+        if not isinstance(value, int):
+            raise TypeError("width must be an integer")
+        elif int(value) < 0:
+            raise ValueError("width must be >= 0")
+        else:
+            self.__width = value
