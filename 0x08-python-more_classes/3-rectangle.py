@@ -64,4 +64,6 @@ class Rectangle:
         “informal” and nicely printable string
         representation of an instance
         """
+        if self.__width == 0 or self.__height == 0:
+            return ""
         return f"{self.pprint()}"
