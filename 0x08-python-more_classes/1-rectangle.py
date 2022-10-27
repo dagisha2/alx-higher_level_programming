@@ -5,7 +5,7 @@
 class Rectangle:
     """This is a class named Rectangle"""
     def __init__(self, width=0, height=0):
-        """this constructs object"""
+        """this constructs  object"""
 
         self.__height = height
         self.__width = width
