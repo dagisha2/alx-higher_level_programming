@@ -21,7 +21,7 @@ class Rectangle:
         try:
             if not isinstance(value, int):
                 raise TypeError
-            elif value < 0:
+            elif int(value) < 0:
                 raise ValueError
             else:
                 self.__height = value
@@ -41,7 +41,7 @@ class Rectangle:
         try:
             if not isinstance(value, int):
                 raise TypeError
-            elif value < 0:
+            elif int(value) < 0:
                 raise ValueError
             else:
                 self.__width = value
