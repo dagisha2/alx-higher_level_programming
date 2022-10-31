@@ -72,6 +72,6 @@ class Rectangle:
         """Instance method that returns an“official” string representation
         of an instance
         """
-        rep = 'Rectangle(' + str(self.__width) + ','
-        /' ' + str(self.__height) + ')'
+        rep = 'Rectangle(' + str(self.__width) + \
+              ','' ' + str(self.__height) + ')'
         return rep
